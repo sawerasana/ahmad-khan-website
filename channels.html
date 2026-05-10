@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-config="siteTitle">Ahmad Khan - Channel Marketplace</title>
+    <meta name="description" content="Browse and buy premium WhatsApp channels from Ahmad Khan. Filter by category, followers, and price.">
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Marketplace styles -->
+    <link rel="stylesheet" href="css/marketplace.css">
+    
+    <!-- Config script -->
+    <script src="js/config.js"></script>
+</head>
+<body>
+
+    <!-- ========== ANNOUNCEMENT BAR ========== -->
+    <div id="announcement-bar" class="announcement-bar" style="display: none;">
+        <p id="announcement-text"></p>
+        <button id="announcement-close" aria-label="Close announcement">&times;</button>
+    </div>
+
+    <!-- ========== NAVIGATION ========== -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Ahmad Khan</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="channels.html" class="active">Marketplace</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Switch theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== HERO STRIP ========== -->
+    <section class="channels-hero">
+        <div class="container">
+            <h1>WhatsApp Channel Marketplace</h1>
+            <p>Browse our collection of high‑quality WhatsApp channels with real followers.</p>
+        </div>
+    </section>
+
+    <!-- ========== FILTER BAR ========== -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <label for="category-filter">Category</label>
+                    <select id="category-filter">
+                        <option value="all">All Categories</option>
+                        <option value="education">Education</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="news">News</option>
+                        <option value="tech">Tech</option>
+                        <option value="business">Business</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="followers-filter">Min. Followers</label>
+                    <select id="followers-filter">
+                        <option value="0">Any</option>
+                        <option value="1000">1K+</option>
+                        <option value="5000">5K+</option>
+                        <option value="10000">10K+</option>
+                        <option value="50000">50K+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price-filter">Max. Price (Rs.)</label>
+                    <select id="price-filter">
+                        <option value="999999">Any</option>
+                        <option value="500">500</option>
+                        <option value="2000">2,000</option>
+                        <option value="5000">5,000</option>
+                        <option value="10000">10,000</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sort-filter">Sort By</label>
+                    <select id="sort-filter">
+                        <option value="followers-desc">Followers (High-Low)</option>
+                        <option value="followers-asc">Followers (Low-High)</option>
+                        <option value="price-desc">Price (High-Low)</option>
+                        <option value="price-asc">Price (Low-High)</option>
+                    </select>
+                </div>
+                <button id="reset-filters" class="btn btn-small btn-outline" style="border-color: var(--primary); color: var(--primary);">Reset</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CHANNELS GRID ========== -->
+    <section class="channels-section">
+        <div class="container">
+            <div id="channels-grid" class="channels-grid">
+                <!-- Loader -->
+                <div id="channels-loader" class="loader-container">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading channels...</p>
+                </div>
+            </div>
+            <div id="no-channels" class="no-results" style="display: none;">
+                <i class="fas fa-search"></i>
+                <p>No channels found. Try different filters.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>&copy; <span id="current-year"></span> Ahmad Khan. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#" target="_blank" id="social-tiktok" style="display:none;"><i class="fab fa-tiktok"></i></a>
+                <a href="#" target="_blank" id="social-instagram" style="display:none;"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" id="social-facebook" style="display:none;"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="#" id="floating-whatsapp" class="floating-whatsapp" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Marketplace JS -->
+    <script src="js/marketplace.js"></script>
+</body>
+</html>
