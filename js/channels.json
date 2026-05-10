@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Pakistan Education Hub",
+    "category": "education",
+    "followers": 52000,
+    "price": 15000,
+    "description": "Educational content, exam tips, and study resources for Pakistani students.",
+    "image": "assets/images/channel-placeholder.png"
+  },
+  {
+    "id": 2,
+    "name": "Daily News Pakistan",
+    "category": "news",
+    "followers": 120000,
+    "price": 35000,
+    "description": "Breaking news, current affairs, and political updates from Pakistan.",
+    "image": "assets/images/channel-placeholder.png"
+  },
+  {
+    "id": 3,
+    "name": "Tech World PK",
+    "category": "tech",
+    "followers": 38000,
+    "price": 12000,
+    "description": "Latest technology news, smartphone reviews, and gadget updates.",
+    "image": "assets/images/channel-placeholder.png"
+  },
+  {
+    "id": 4,
+    "name": "Lollywood Movies",
+    "category": "entertainment",
+    "followers": 95000,
+    "price": 28000,
+    "description": "Pakistani movies, dramas, and entertainment updates.",
+    "image": "assets/images/channel-placeholder.png"
+  },
+  {
+    "id": 5,
+    "name": "Cricket Fever Pakistan",
+    "category": "entertainment",
+    "followers": 210000,
+    "price": 50000,
+    "description": "Live cricket updates, match highlights, and PSL coverage.",
+    "image": "assets/images/channel-placeholder.png"
+  },
+  {
+    "id": 6,
+    "name": "Business Ideas PK",
+    "category": "business",
+    "followers": 15000,
+    "price": 5000,
+    "description": "Small business ideas, entrepreneurship tips, and success stories.",
+    "image": "assets/images/channel-placeholder.png"
+  },
+  {
+    "id": 7,
+    "name": "Islamic Knowledge",
+    "category": "education",
+    "followers": 75000,
+    "price": 20000,
+    "description": "Daily Quran verses, Hadith, and Islamic teachings.",
+    "image": "assets/images/channel-placeholder.png"
+  },
+  {
+    "id": 8,
+    "name": "Cooking with Ammi",
+    "category": "entertainment",
+    "followers": 42000,
+    "price": 12000,
+    "description": "Pakistani recipes, cooking tips, and kitchen hacks.",
+    "image": "assets/images/channel-placeholder.png"
+  },
+  {
+    "id": 9,
+    "name": "Startup Pakistan",
+    "category": "business",
+    "followers": 28000,
+    "price": 8000,
+    "description": "Pakistani startup ecosystem, funding news, and business networking.",
+    "image": "assets/images/channel-placeholder.png"
+  },
+  {
+    "id": 10,
+    "name": "Health Tips Daily",
+    "category": "education",
+    "followers": 63000,
+    "price": 18000,
+    "description": "Health advice, fitness tips, and medical awareness content.",
+    "image": "assets/images/channel-placeholder.png"
+  },
+  {
+    "id": 11,
+    "name": "Funny Videos Central",
+    "category": "entertainment",
+    "followers": 180000,
+    "price": 45000,
+    "description": "Hilarious videos, memes, and comedy content.",
+    "image": "assets/images/channel-placeholder.png"
+  },
+  {
+    "id": 12,
+    "name": "Job Alerts Pakistan",
+    "category": "business",
+    "followers": 85000,
+    "price": 22000,
+    "description": "Government and private job alerts, career advice, and exam notifications.",
+    "image": "assets/images/channel-placeholder.png"
+  }
+]
